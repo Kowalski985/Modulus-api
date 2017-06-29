@@ -1,8 +1,8 @@
 import scrapy
 
 #to run crawler: scrapy crawl NUS_SoC_preApproved -o NUS_SoC_preApproved.json
-class NUSSoCPreSpider(scrapy.Spider):
-    name = "NUS_SoC_preApproved"
+class NusSocPreSpider(scrapy.Spider):
+    name = "NusSocPreApproved"
     start_urls = [
         'https://comp.nus.edu.sg/programmes/ug/beyond/sep/sepnoc/'
     ]

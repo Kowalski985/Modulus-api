@@ -7,8 +7,17 @@
 
 import scrapy
 
+class PreApprovedMapping(scrapy.Item):
+	NUSCode = scrapy.Field()
+    PUCode = scrapy.Field()
+    PUName = scrapy.Field()
 
-class ModulusItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class Module(scrapy.Item):
+	ModuleCode = scrapy.Field()
+	ModuleTitle = scrapy.Field()
+	ModuleDescription = scrapy.Field()
+	Link = scrapy.Field()
+
+class NusModule(Module):
+	ModuleCredit = scrapy.Field()
+	ModuleWorkLoad = scrapy.Field()
